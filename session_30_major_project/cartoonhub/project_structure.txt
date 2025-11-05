@@ -1,0 +1,12 @@
+session_30_major_project
+
+project_structure.txt
+
+cartoonhub/
+│── server.js          # Express server + API routes
+│── db.js              # MySQL connection
+│── public/
+│    ├── index.html    # Cartoon Quiz frontend
+│    ├── style.css     # Quiz styling
+│    └── script.js     # Quiz logic
+│── package.json

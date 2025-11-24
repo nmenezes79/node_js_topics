@@ -1,0 +1,40 @@
+vaishnavi-grocery-world/
+│
+├── public/
+│   └── style.css
+├── views/
+│   ├── index.html
+│   └── home.html
+├── server.js
+
+npm init -y
+npm install express mysql
+node server.js
+
+CREATE DATABASE grocery_store;
+
+Open http://localhost:8080 in your browser.
+
+*******************************************
+
+CREATE DATABASE vaishnavi_grocery_world;
+
+USE vaishnavi_grocery_world;
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    p_name VARCHAR(100),
+    p_price DECIMAL(10,2),
+    image_url VARCHAR(255)
+);
+
+DESCRIBE products;
+
+INSERT INTO products (p_name, p_price, image_url) VALUES
+('Apples', 3.99, 'https://organicmandya.com/cdn/shop/files/Apples_bf998dd2-0ee8-4880-9726-0723c6fbcff3.jpg?v=1721368465&width=1024'),
+('Bananas', 1.99, 'https://organicmandya.com/cdn/shop/files/BananaPachabale.jpg?v=1721369894&width=1000'),
+('Bread', 2.99, 'https://cakebee.in/cdn/shop/products/SandwichBread_e8041b4a-15e8-4e3e-b8dd-265cef13ae9f_600x.jpg?v=1678994343');
+
+SELECT * FROM products;
+
+-- DROP TABLE products;
